@@ -1,430 +1,150 @@
-/*Mobile layout*/
-@media screen and (max-width: 768px){
-    body {
-        font: 15px Arial;
-        background-color: #E7F2F8;
-    }
-
-    header, section, nav, main, footer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .header {
-        font: 20px Calibri;
-        color: black;
-        margin-bottom: 1rem;
-        padding: 1rem 0;
-    }
-
-    #myPic {
-        max-width: 30vw;
-        height: 30vw;
-        float: left;
-        border-radius: 20px;
-        z-index: 2;
-        margin-top: 20px;
-    }
-    nav li{
-        display: inline-block;
-    }
-
-    a {
-        font-size: 16px;
-        margin: 1rem 0;
-    }
-
-    #hire {
-        display: none;
-        float: right;
-        font: 20px Calibri;
-        color: darkgray;
-        padding: 10px;
-    }
-
-    audio {
-        width: 200px;
-        height: 20px;
-        border-radius: 10px;
-        border: 5px ridge pink;
-    }
-
-    .subhead {
-        font: 20px Arial;
-        text-align: left;
-        color: grey;
-        margin: 10px;
-    }
-
-    .intro {
-        font: 18px Arial;
-        text-align: center;
-        color: rebeccapurple;
-    }
-
-    .bgp {
-        display: none;
-        float: right;
-        border-radius: 15px;
-        width: 300px;
-        height: 200px;
-    }
-
-    .list {
-        font: 17px Arial;
-        color: rebeccapurple;
-        text-align: left;
-        padding: 7px;
-        margin: auto;
-    }
-
-    section {
-        background-color: #F9F1F0;
-    }
-    nav {
-        background-color: #E7D2CC;
-    }
-
-    main {
-        background-color: #EEEDE7;
-    }
-
-    footer {
-        background-color: #B4AAA9;
-    }
-
-    .copyright {
-        font: 10px Arial;
-        color: gray;
-        padding: 15px;
-        text-align: left;
-    }
-
-    .linkin-icon::before {
-        display: none;
-        content: url("imgs/linkin_icon.png");
-        width: 6px;
-        height: 6px;
-        padding-right: 10px;
-    }
-
-    .mail-icon::before {
-        display: none;
-        content: url("imgs/mail_icon.png");
-        width: 30px;
-        height: 30px;
-        padding-right: 15px;
-        padding-left: 15px;
-    }
-
-    .skype-icon::before {
-        display: none;
-        content: url("imgs/skype_icon.png");
-        width: 25px;
-        height: 15px;
-        padding-right: 15px;
-        padding-left: 15px;
-    }
+body {
+    min-width: 700px;
+    font: 30px Arial;
+    background-image: url("imgs/index_bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-gap: 8px 5px;
 }
-/* Tablet layout */
-@media screen and (min-width: 769px) and (max-width: 1000px){
-    body {
-        font: 15px Arial;
-        display: grid;
-        grid-template-columns: 25% auto;
-    }
 
-    section {
-        background-color: #F9F1F0;
-    }
-
-    nav {
-        grid-row: 2/4;
-    }
-
-    nav li {
-        font: 50px Calibri;
-        font-weight: bold;
-        text-align: left;
-        list-style: none;
-        text-decoration: none;
-    }
-
-    header {
-        grid-column: 1/3;
-    }
-
-    .header {
-        float: left;
-        font: 25px Calibri;
-        color: black;
-        padding: 20px;
-    }
-
-    #myPic {
-        max-width: 30vw;
-        height: 30vw;
-        border-radius: 20px;
-        z-index: 2;
-        margin-top: 20px;
-    }
-
-    #hire {
-        float: right;
-        font: 20px Calibri;
-        color: darkgray;
-        padding: 10px;
-    }
-
-    a {
-        text-decoration: none;
-        font-size: 14px;
-    }
-
-
-    .audio {
-        margin-top: 50px;
-        margin-bottom: 20px;
-    }
-
-    audio {
-        width: 340px;
-        height: 15px;
-        border-radius: 10px;
-        border: 5px ridge pink;
-    }
-
-    .subhead {
-        font: 20px Arial;
-        text-align: left;
-        color: grey;
-        margin: 10px;
-    }
-
-    .intro {
-        float: left;
-        font: 20px Arial;
-        text-align: left;
-        text-indent: 0.3em;
-        color: rebeccapurple;
-    }
-
-    .bgp {
-        display: none;
-        float: right;
-        border-radius: 15px;
-        width: 300px;
-        height: 200px;
-    }
-
-    .list {
-        font: 17px Arial;
-        color: rebeccapurple;
-        text-align: left;
-        padding: 7px;
-    }
-
-    footer {
-        grid-column: 1/3;
-    }
-
-    nav {
-        background-color: #E7D2CC;
-    }
-
-    main {
-        background-color: #EEEDE7;
-    }
-
-    footer {
-        background-color: #B4AAA9;
-    }
-
-    .copyright {
-        font: 10px Arial;
-        color: gray;
-        padding: 15px;
-        text-align: left;
-    }
-
-    .linkin-icon::before {
-        display: none;
-        content: url("imgs/linkin_icon.png");
-        width: 6px;
-        height: 6px;
-        padding-right: 10px;
-    }
-
-    .mail-icon::before {
-        display: none;
-        content: url("imgs/mail_icon.png");
-        width: 30px;
-        height: 30px;
-        padding-right: 15px;
-        padding-left: 15px;
-    }
-
-    .skype-icon::before {
-        display: none;
-        content: url("imgs/skype_icon.png");
-        width: 25px;
-        height: 15px;
-        padding-right: 15px;
-        padding-left: 15px;
-    }
+nav {
+    line-height: 2em;
+    margin-top: 100px;
+    border-radius: 8px;
+    grid-row: 2/4;
+    height: 500px;
+    padding: 50px;
 }
-/*Desktop layout*/
-@media screen and (min-width: 1000px){
-    body {
-        min-width: 700px;
-        font: 30px Arial;
-        background-image: url("imgs/index_bg.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        display: grid;
-        grid-template-columns: 25% auto;
-        grid-gap: 8px 5px;
-    }
 
-    nav {
-        background-color: #E7D2CC;
-        line-height: 2em;
-        margin-top: 100px;
-        border-radius: 8px;
-        grid-row: 2/4;
-        padding: 50px;
-    }
+nav li {
+    font: 50px Calibri;
+    font-weight: bold;
+    text-align: left;
+    list-style: none;
+    text-decoration: none;
+}
 
-    nav li {
-        font: 50px Calibri;
-        font-weight: bold;
-        text-align: left;
-        list-style: none;
-        text-decoration: none;
-    }
+header {
+    grid-column: 1/3;
+    height: 120px;
+}
 
-    header {
-        grid-column: 1/3;
-        /*height: 120px;*/
-    }
+.header {
+    float: left;
+    font: 50px Calibri;
+    text-align: center;
+    color: black;
+    padding: 50px;
+}
 
-    .header {
-        float: left;
-        font: 50px Calibri;
-        text-align: center;
-        color: black;
-        padding: 50px;
-    }
+#myIMG {
+    display: inline-block;
+    float: left;
+    border-radius: 100px;
+    border: 5px;
+    margin: 50px;
+    z-index: 2;
+}
 
-    #myIMG {
-        display: inline-block;
-        float: left;
-        border-radius: 100px;
-        border: 5px;
-        margin: 50px;
-        z-index: 2;
-    }
+#myPic {
+    display: inline-block;
+    float: left;
+    border-radius: 100px;
+    z-index: 2;
+    margin-top: 20px;
+}
 
-    #myPic {
-        display: inline-block;
-        float: left;
-        border-radius: 100px;
-        z-index: 2;
-        margin-top: 20px;
-    }
+#hire {
+    float: right;
+    font: 20px Calibri;
+    color: darkgray;
+    padding: 40px;
+}
 
-    #hire {
-        float: right;
-        font: 20px Calibri;
-        color: darkgray;
-        padding: 40px;
-    }
+a {
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+}
 
-    a {
-        text-decoration: none;
-        font-size: 20px;
-        cursor: pointer;
-    }
+a:hover {
+    color: grey;
+}
 
-    a:hover {
-        color: grey;
-    }
+.audio {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
 
-    .audio {
-        margin-top: 50px;
-        margin-bottom: 20px;
-    }
+audio {
+    width: 400px;
+    height: 30px;
+    border-radius: 10px;
+    border: 5px ridge pink;
+}
 
-    audio {
-        width: 400px;
-        height: 30px;
-        border-radius: 10px;
-        border: 5px ridge pink;
-    }
+.subhead {
+    font: 40px Arial;
+    text-align: left;
+    color: grey;
+    margin: 10px;
+}
 
-    .subhead {
-        font: 40px Arial;
-        text-align: left;
-        color: grey;
-        margin: 10px;
-    }
+.intro {
+    float: left;
+    font: 30px Arial;
+    text-align: left;
+    text-indent: 0.3em;
+    color: rebeccapurple;
+}
 
-    .intro {
-        float: left;
-        font: 30px Arial;
-        text-align: left;
-        text-indent: 0.3em;
-        color: rebeccapurple;
-    }
+.bgp {
+    float: right;
+    border-radius: 15px;
+    width: 300px;
+    height: 200px;
+}
 
-    .bgp {
-        float: right;
-        border-radius: 15px;
-        width: 300px;
-        height: 200px;
-    }
+.list {
+    font: 25px Arial;
+    color: rebeccapurple;
+    text-align: left;
+    padding: 10px;
+    line-height: 2em;
+}
 
-    .list {
-        font: 25px Arial;
-        color: rebeccapurple;
-        text-align: left;
-        padding: 10px;
-        line-height: 2em;
-    }
+footer {
+    grid-column: 2/3;
+}
 
-    footer {
-        grid-column: 1/3;
-        background-color: #B4AAA9;
-    }
+.copyright {
+    font: 15px Arial;
+    color: gray;
+    padding: 20px;
+    text-align: left;
+}
 
-    .copyright {
-        font: 15px Arial;
-        color: gray;
-        padding: 20px;
-        text-align: left;
-    }
+.linkin-icon::before {
+    content: url("imgs/linkin_icon.png");
+    width: 10px;
+    height: 10px;
+    padding-right: 15px;
+}
 
-    .linkin-icon::before {
-        content: url("imgs/linkin_icon.png");
-        width: 10px;
-        height: 10px;
-        padding-right: 15px;
-    }
+.mail-icon::before {
+    content: url("imgs/mail_icon.png");
+    width: 30px;
+    height: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
 
-    .mail-icon::before {
-        content: url("imgs/mail_icon.png");
-        width: 30px;
-        height: 30px;
-        padding-right: 15px;
-        padding-left: 15px;
-    }
-
-    .skype-icon::before {
-        content: url("imgs/skype_icon.png");
-        width: 25px;
-        height: 15px;
-        padding-right: 15px;
-        padding-left: 15px;
-    }
+.skype-icon::before {
+    content: url("imgs/skype_icon.png");
+    width: 25px;
+    height: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
