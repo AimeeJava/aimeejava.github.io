@@ -1,0 +1,110 @@
+body {
+    background-image: url("imgs/about_bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font: 20px Arial;
+    color: black;
+}
+
+header {
+    text-align: center;
+}
+
+nav {
+    margin-left: 10px;
+    display: flex;
+    gap: 20px;
+    padding: 5px;
+}
+
+article {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: rebeccapurple;
+}
+
+a:hover {
+    color: grey;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+*.media {
+    border: 2px solid cornflowerblue;
+}
+
+.subhead {
+    font: 30px Arial;
+    text-align: center;
+    color: black;
+    margin-bottom: 5px;
+}
+
+main ul {
+    line-height: 2em;
+}
+
+table {
+    padding: 10px;
+    text-align: center;
+}
+
+.table {
+    border: 1px solid #BFD7ED;
+    border-radius: 5px;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+}
+
+#clients {
+    margin: 30px;
+    float: left;
+}
+
+select {
+    margin-top: 30px;
+    float: left;
+    width: 200px;
+    height: 30px;
+    border-color: gray;
+}
+
+.copyright {
+    font: 15px Arial;
+    color: gray;
+    padding: 20px;
+    text-align: center;
+}
+
+.linkin-icon::before {
+    content: url("imgs/linkin_icon.png");
+    width: 10px;
+    height: 10px;
+    padding-right: 15px;
+}
+
+.mail-icon::before {
+    content: url("imgs/mail_icon.png");
+    width: 30px;
+    height: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.skype-icon::before {
+    content: url("imgs/skype_icon.png");
+    width: 25px;
+    height: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+}

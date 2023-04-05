@@ -1,0 +1,166 @@
+body {
+    background-image: url("imgs/about_bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font: 20px Arial;
+    color: rebeccapurple;
+}
+
+header > span{
+    font: 35px Calibri;
+    text-align: left;
+    color: black;
+    padding: 20px;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+header > img {
+    border-radius: 100px;
+    margin: 40px;
+    float: left;
+}
+
+img ~ span {
+    display: inline-block;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    margin: 30px 200px;
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #7F3E71;
+}
+
+a:hover {
+    color: deepskyblue;
+}
+
+section {
+    border: 3px ridge lightcyan;
+    border-radius: 20px;
+    font: 20px Arial;
+    font-weight: bold;
+    color: rebeccapurple;
+    text-align: left;
+    padding: 10px;
+    line-height: 2em;
+}
+
+.academic {
+    margin-bottom: 50px;
+}
+
+.subhead {
+    font: 30px Arial;
+    text-align: left;
+    color: grey;
+    margin-bottom: 5px;
+}
+
+#mufg {
+    border-radius: 10px;
+    border: #b3d4fc;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+#text {
+    padding-right: 20px;
+    font-weight: bold;
+}
+
+#test + #mufg {
+    display: inline-block;
+}
+main ol {
+    line-height: 2em;
+}
+
+label {
+    display: inline-block;
+    color: #555555;
+    width: 50px;
+    font-size: 20px;
+    text-align: right;
+    margin-right: 50px;
+    margin-left: 20px;
+}
+
+input[type = text], input[type=email] {
+    box-sizing: border-box;
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+input[type=submit] {
+    width: 200px;
+    background-color: #BBC8DE;
+    color: black;
+    padding: 15px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    border-color: #BBC8DE;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #07d;
+}
+
+textarea {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 300px;
+    height: 100px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.messages {
+    float: left;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.copyright {
+    font: 15px Arial;
+    color: gray;
+    padding: 20px;
+    text-align: center;
+}
+
+.linkin-icon::before {
+    content: url("imgs/linkin_icon.png");
+    width: 10px;
+    height: 10px;
+    padding-right: 15px;
+}
+
+.mail-icon::before {
+    content: url("imgs/mail_icon.png");
+    width: 30px;
+    height: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.skype-icon::before {
+    content: url("imgs/skype_icon.png");
+    width: 25px;
+    height: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
