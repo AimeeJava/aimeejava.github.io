@@ -7,83 +7,105 @@
     <link href="styles_about.css" rel="stylesheet">
 </head>
 <body>
+<div id="introEffect">
+    <iframe src="AimeeWeb.html" style="width:100%; height:500px; border: none";></iframe>
+
+</div>
 <header>
-    <img alt="200" src="imgs/Aimee.png" width="200">
-    <span>Hi, my name is Aimee.<br> I have ... </span>
+    <img alt="100" src="imgs/Aimee.png" width="100">
+    <div class="container">
+    <h2>
+        <span>H</span>
+        <span>i</span>
+        <span>,</span>
+        <span>&nbsp;</span>
+        <span>I</span>
+        <span>&nbsp;</span>
+        <span>a</span>
+        <span>m</span>
+        <span>&nbsp;</span>
+        <span>A</span>
+        <span>i</span>
+        <span>m</span>
+        <span>e</span>
+        <span>e</span>
+    </h2>
+    </div>
 </header>
 <nav>
-    <div><a href="index.html">Homepage</a></div>
+<!--    <div><a href="index.html">Homepage</a></div>-->
     <div><a href="Projects.html">Projects</a></div>
     <div><a href="#contact">Contact me</a></div>
 </nav>
+<main>
 <section>
     <div class="about_list">
         <ul>
-            <li>8 years’ experience in investment operations and financial services industry
-                and 1 year experience in computer science industry.
-            </li>
-            <li>Excellent skills in computer programming and web design.</li>
-            <li>A detail orientated team player with excellent communication, problem management,
-                organizational and time management skills.
-            </li>
-            <li>Artificial intelligent certificate and data analysis certificate holder.</li>
+            <li>Cybersecurit</li>
+            <li>Full stack development</li>
+            <li>Cloud computing</li>
+            <li>Investment expertise</li>
         </ul>
     </div>
 </section>
-<main>
-    <h4 class="subhead">Work Experience</h4>
-    <div class="work">
-        <span id="text">Mitsubishi Investor Services (Halifax, Canada)</span>
-        <a href="https://www.mufg-investorservices.com/" target="_blank"><img alt="MUFG" id="mufg" src="imgs/MUFG.png"></a>
-        <div>
-            <ol>
-                <li>Performed trade operations including:</li>
-                <ul>
-                    <li>Wires transfer</li>
-                    <li>Alternatives investment operations</li>
-                    <li>Bonds and bank loans operations</li>
-                    <li>Maintaining ongoing relationships with investors</li>
-                </ul>
-                <li>Monitored the trading system and solved runtime errors</li>
-                <li>Compiled pricing and ownership reports on a monthly basis</li>
-            </ol>
+    <h4>
+        <span>P</span>
+        <span>r</span>
+        <span>o</span>
+        <span>j</span>
+        <span>e</span>
+        <span>t</span>
+        <span>s</span>
+    </h4>
+        <span id="text">Github
+            <a href="https://github.com/AimeeJava?tab=repositories" target="_blank">
+        https://github.com/AimeeJava?tab=repositories
+            </a>
+        </span>
+        <div id="project">
+        <ul>
+            <li>Generative AI Hackathon winner: designed hearing aid device for physical challenge people</li>
+            <li>Halifax Innovation challenge 2023: Building Client Relationships and Trust with AI </br>– upgrade the current RBC AI tool Nomi
+                by integrating investment analysis</li>
+            <li>Deep Dive into the Ocean Hackathon: Built remotely operated vehicle</li>
+            <li>Cybersecurity Training and Work Integrated Learning Program</li>
+        </ul>
         </div>
-    </div>
-    <h4 class="subhead">Academic Background</h4>
-    <div class="academic">
-        <ol>
-            <li>Bachelor of Computer Science -- Dalhousie University</li>
-            <li>Master of Science in Finance -- University of St Andrews</li>
-            <li>Bachelor of Science in Applied Mathematics -- Beijing Forestry University</li>
-        </ol>
-    </div>
 </main>
 <footer>
     <div>
-        <p class="subhead">Contact me</p>
-        <form action="" target="_blank" method="POST">
-            <p>
-                <label for="name">Name</label>
-                <input type="text" id="name" name="fullname" required>
-            </p>
-            <p>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-            </p>
+        <h4>
+            <span>C</span>
+            <span>o</span>
+            <span>n</span>
+            <span>t</span>
+            <span>a</span>
+            <span>c</span>
+            <span>t</span>
+            <span>&nbsp;</span>
+            <span>m</span>
+            <span>e</span>
+        </h4>
+        <form id="myForm" action="script.php" target="_blank" method="POST">
             <p>
                 <label class="messages" for="messages">Leave messages</label>
                 <textarea id="messages" name="message"></textarea>
             </p>
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" onclick="resetForm();">
         </form>
+        <script>
+            function resetForm(){
+                document.getElementById('myForm').reset();
+            }
+        </script>
+
     </div>
     <div id="contact">
-        <a class="linkin-icon" href="https://ca.linkedin.com/in/aimee-li-405a1431" target="_blank">Linkedin</a>
-        <a class="mail-icon" href="mailto:aimeeli@dal.ca" target="_blank">Email</a>
-        <a class="skype-icon" href="https://join.skype.com/invite/ybLKIjblwPav" target="_blank">Skype</a><br>
+        <a class="linkin-icon" href="https://ca.linkedin.com/in/aimee-li-405a1431" target="_blank"></a>
+        <a class="mail-icon" href="mailto:aimeeli@dal.ca" target="_blank"></a>
+        <a class="github-icon" href="https://github.com/AimeeJava?tab=repositories" target="_blank"></a>
     </div>
     <div class="copyright">&copy; Aimee. website design 2023.</div>
 </footer>
-
 </body>
 </html>

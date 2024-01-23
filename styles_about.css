@@ -1,28 +1,76 @@
 body {
-    background-image: url("imgs/about_bg.png");
+    background-image: url("imgs/about_bg2.png");
     background-size: cover;
     background-repeat: no-repeat;
     font: 20px Arial;
-    color: rebeccapurple;
 }
 
-header > span{
-    font: 35px Calibri;
-    text-align: left;
-    color: black;
-    padding: 20px;
+.container {
+    display: flex;
+    height: 10vh;
+    /*justify-content: center;*/
+    align-items: center;
+    overflow: hidden;
+    /*padding: 20px;*/
     margin-top: 50px;
-    margin-left: 30px;
+    /*margin-left: 30px;*/
 }
+
+h2{
+    display: flex;
+    font-size: 35px;
+    color: white;
+    text-align: center;
+}
+h4{
+    display: flex;
+    font-size: 25px;
+    color: white;
+    margin-left: 200px;
+    text-align: center;
+}
+h2 span{
+    transition: 2s;
+}
+h4 span{
+    transition: 2s;
+}
+
+h2:hover span{
+    filter: blur(20px);
+    opacity:0;
+    transform:scale(2);
+}
+h4:hover span{
+    filter: blur(20px);
+    opacity:0;
+    transform:scale(2);
+}
+
+h2 span:nth-child(1){transition-delay: 0.1s;}
+h2 span:nth-child(2){transition-delay: 0.2s;}
+h2 span:nth-child(3){transition-delay: 0.3s;}
+h2 span:nth-child(4){transition-delay: 0.4s;}
+h2 span:nth-child(5){transition-delay: 0.5s;}
+h2 span:nth-child(6){transition-delay: 0.6s;}
+h2 span:nth-child(7){transition-delay: 0.7s;}
+h2 span:nth-child(8){transition-delay: 0.8s;}
+h2 span:nth-child(9){transition-delay: 0.9s;}
+
+h4 span:nth-child(1){transition-delay: 0.1s;}
+h4 span:nth-child(2){transition-delay: 0.2s;}
+h4 span:nth-child(3){transition-delay: 0.3s;}
+h4 span:nth-child(4){transition-delay: 0.4s;}
+h4 span:nth-child(5){transition-delay: 0.5s;}
+h4 span:nth-child(6){transition-delay: 0.6s;}
+h4 span:nth-child(7){transition-delay: 0.7s;}
+h4 span:nth-child(8){transition-delay: 0.8s;}
 
 header > img {
     border-radius: 100px;
-    margin: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
     float: left;
-}
-
-img ~ span {
-    display: inline-block;
 }
 
 nav {
@@ -34,59 +82,55 @@ nav {
 
 a {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 13px;
     cursor: pointer;
-    color: #7F3E71;
+    color: honeydew;
 }
 
 a:hover {
-    color: deepskyblue;
+    color: rosybrown;
 }
 
 section {
-    border: 3px ridge lightcyan;
-    border-radius: 20px;
-    font: 20px Arial;
-    font-weight: bold;
-    color: rebeccapurple;
+    font: 14px Arial;
+    /*font-weight: bold;*/
+    color: white;
     text-align: left;
-    padding: 10px;
+    /*padding: 10px;*/
+    line-height: 2em;
+}
+#project{
+    font: 14px Arial;
+    /*font-weight: bold;*/
+    color: white;
+    text-align: left;
+    /*padding: 10px;*/
     line-height: 2em;
 }
 
-.academic {
-    margin-bottom: 50px;
-}
-
 .subhead {
-    font: 30px Arial;
-    text-align: left;
-    color: grey;
+    font: 20px Arial;
+    margin-left: 200px;
+    /*text-align: center;*/
+    color: white;
     margin-bottom: 5px;
 }
 
-#mufg {
-    border-radius: 10px;
-    border: #b3d4fc;
-    margin-left: 20px;
-    cursor: pointer;
-}
-
 #text {
+    font-size: 12px;
+    margin-left: 100px;
+    /*margin-top: 200px;*/
     padding-right: 20px;
-    font-weight: bold;
+    color: rosybrown;
 }
 
-#test + #mufg {
-    display: inline-block;
-}
 main ol {
     line-height: 2em;
 }
 
 label {
     display: inline-block;
-    color: #555555;
+    color: white;
     width: 50px;
     font-size: 20px;
     text-align: right;
@@ -97,21 +141,25 @@ label {
 input[type = text], input[type=email] {
     box-sizing: border-box;
     width: 250px;
-    padding: 10px;
+    height: 100px;
+    padding: 20px;
     border: 1px solid #aaa;
     border-radius: 4px;
 }
 
 input[type=submit] {
-    width: 200px;
+    width: 60px;
+    height: 20px;
     background-color: #BBC8DE;
-    color: black;
-    padding: 15px;
-    margin-left: 20px;
+    color: brown;
+    padding: 5px;
+    margin-left: 230px;
     margin-bottom: 50px;
-    border-color: #BBC8DE;
-    border-radius: 4px;
+    border: none;
+    border-radius: 20px;
     cursor: pointer;
+    font-size: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 input[type=submit]:hover {
@@ -122,7 +170,7 @@ textarea {
     display: inline-block;
     box-sizing: border-box;
     width: 300px;
-    height: 100px;
+    height: 80px;
     border: 1px solid #aaa;
     border-radius: 4px;
     margin-left: 10px;
@@ -130,8 +178,9 @@ textarea {
 
 .messages {
     float: left;
-    font-size: 20px;
+    font-size: 14px;
     text-align: center;
+    margin-top: 20px;
     margin-bottom: 50px;
 }
 
@@ -144,23 +193,31 @@ textarea {
 
 .linkin-icon::before {
     content: url("imgs/linkin_icon.png");
-    width: 10px;
-    height: 10px;
-    padding-right: 15px;
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    vertical-align: middle;
+    margin-left: 50px;
+    margin-right: 80px;
+    background-size: cover;
 }
 
 .mail-icon::before {
     content: url("imgs/mail_icon.png");
-    width: 30px;
-    height: 30px;
-    padding-right: 15px;
-    padding-left: 15px;
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    vertical-align: middle;
+    margin-right: 80px;
+    background-size: cover; /* Ensures the image covers the entire area without distortion */
 }
 
-.skype-icon::before {
-    content: url("imgs/skype_icon.png");
-    width: 25px;
-    height: 15px;
-    padding-right: 15px;
-    padding-left: 15px;
+.github-icon::before {
+    content: url("imgs/github_icon1.png");
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    vertical-align: middle;
+    margin-right: 50px;
+    background-size: cover; /* Ensures the image covers the entire area without distortion */
 }
