@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About me</title>
+    <link href="imgs/favicon.png" rel="icon">
+    <link href="styles_about.css" rel="stylesheet">
+</head>
+<body>
+<div id="introEffect">
+    <iframe src="AimeeWeb.html" style="width:100%; height:500px; border: none";></iframe>
+
+</div>
+<header>
+    <img alt="100" src="imgs/Aimee.png" width="100">
+    <div class="container">
+        <h2>
+            <span>H</span>
+            <span>i</span>
+            <span>,</span>
+            <span>&nbsp;</span>
+            <span>I</span>
+            <span>&nbsp;</span>
+            <span>a</span>
+            <span>m</span>
+            <span>&nbsp;</span>
+            <span>A</span>
+            <span>i</span>
+            <span>m</span>
+            <span>e</span>
+            <span>e</span>
+        </h2>
+    </div>
+</header>
+<nav>
+    <!--    <div><a href="index.html">Homepage</a></div>-->
+    <div><a href="Projects.html">Projects</a></div>
+    <div><a href="#contact">Contact me</a></div>
+</nav>
+<main>
+    <section>
+        <div class="about_list">
+            <ul>
+                <li>Cybersecurit</li>
+                <li>Full stack development</li>
+                <li>Cloud computing</li>
+                <li>Investment expertise</li>
+            </ul>
+        </div>
+    </section>
+    <h4>
+        <span>P</span>
+        <span>r</span>
+        <span>o</span>
+        <span>j</span>
+        <span>e</span>
+        <span>t</span>
+        <span>s</span>
+    </h4>
+    <span id="text">Github
+            <a href="https://github.com/AimeeJava?tab=repositories" target="_blank">
+        https://github.com/AimeeJava?tab=repositories
+            </a>
+        </span>
+    <div id="project">
+        <ul>
+            <li>Generative AI Hackathon winner: designed hearing aid device for physical challenge people</li>
+            <li>Halifax Innovation challenge 2023: Building Client Relationships and Trust with AI </br>– upgrade the current RBC AI tool Nomi
+                by integrating investment analysis</li>
+            <li>Deep Dive into the Ocean Hackathon: Built remotely operated vehicle</li>
+            <li>Cybersecurity Training and Work Integrated Learning Program</li>
+        </ul>
+    </div>
+</main>
+<footer>
+    <div>
+        <h4>
+            <span>C</span>
+            <span>o</span>
+            <span>n</span>
+            <span>t</span>
+            <span>a</span>
+            <span>c</span>
+            <span>t</span>
+            <span>&nbsp;</span>
+            <span>m</span>
+            <span>e</span>
+        </h4>
+        <form id="myForm" action="script.php" target="_blank" method="POST">
+            <p>
+                <label class="messages" for="messages">Leave messages</label>
+                <textarea id="messages" name="message"></textarea>
+            </p>
+            <input type="submit" value="Submit" onclick="resetForm();">
+        </form>
+        <script>
+            function resetForm(){
+                document.getElementById('myForm').reset();
+            }
+        </script>
+
+    </div>
+    <div id="contact">
+        <a class="linkin-icon" href="https://ca.linkedin.com/in/aimee-li-405a1431" target="_blank"></a>
+        <a class="mail-icon" href="mailto:aimeeli@dal.ca" target="_blank"></a>
+        <a class="github-icon" href="https://github.com/AimeeJava?tab=repositories" target="_blank"></a>
+    </div>
+    <div class="copyright">&copy; Aimee. website design 2023.</div>
+</footer>
+</body>
+</html>
